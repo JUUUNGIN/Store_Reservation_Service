@@ -1,0 +1,14 @@
+spring:
+  application:
+   name: tableReservation
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/table_reservation_db
+    username: table_reservation_user
+    password: 9999
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
