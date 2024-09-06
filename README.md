@@ -1,7 +1,5 @@
 ## ⏰매장 예약 시스템 구현하기 <br>
 
-![image](https://github.com/user-attachments/assets/14e700dc-cb74-47fc-bc08-5b89fed7e221)
-
 
 *security 설정을 테스트 때문에 잠시 모두 허용으로 해놓음
 
@@ -32,4 +30,10 @@
 
 - security 관련 공부가 더 필요함(보안설정으로 테스트가 안됨)<br>
 - 리뷰 수정과 삭제할 때 로그인 후 권한대로 행동할 수 있게끔 로직설계 필요함
+
+<br>
+
+### ERD 설계도 <br>
+![image](https://github.com/user-attachments/assets/ccc3215b-9bdb-4f7b-b614-51e354859174)
+
 
