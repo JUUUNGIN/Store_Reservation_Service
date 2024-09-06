@@ -36,12 +36,12 @@ public class ReviewController {
     }
 
 
-//    리뷰 수정
+//    리뷰 수정(기존의 리뷰는 따로 저장하지 않고 새로 업데이트만)
     @PostMapping("/edit")
     public ResponseEntity<String> editReview(
             @RequestParam String phoneNumber,
             @RequestParam String storeName,
-            @RequestParam String newContent,
+            @RequestParam String newContent, //기존 content는 사라짐
             @RequestParam int newRating) {
 
         try {

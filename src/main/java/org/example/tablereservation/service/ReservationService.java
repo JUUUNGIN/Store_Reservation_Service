@@ -48,9 +48,10 @@ public class ReservationService {
     public boolean confirmVisitByPhoneNumberAndStoreName(String phoneNumber, String storeName) {
         Optional<ReservationEntity> reservationOptional = reservationRepository.findFirstByPhoneNumberAndStoreNameOrderByDateAsc(phoneNumber);
 
-        if (reservationOptional.isPresent()) {
-            ReservationEntity nearestReservation = reservationOptional.get();
-            LocalDateTime reservationTime = LocalDateTime.parse(nearestReservation.getDate() + "T" + nearestReservation.getTime());
+        if (reservationOptional.isPresent()) {                                   // 예약이 있다면
+            ReservationEntity nearestReservation = reservationOptional.get();    // 예약 객체 가져옴
+
+            LocalDateTime reservationTime = LocalDateTime.parse(nearestReservation.getDate() + "T" + nearestReservation.getTime()); //(T : 날짜-시간 표기법에서 날짜와 시간을 구분하는 문자)
             LocalDateTime now = LocalDateTime.now();
 
 //            예약 시간이 현재 시간으로 부터 10분 전인지 확인

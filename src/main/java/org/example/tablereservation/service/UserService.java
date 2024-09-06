@@ -20,7 +20,7 @@ public class UserService {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
-
+// 회원가입
     public UserEntity create(String id, String userName, String password, String phoneNumber) {
 
 //        중복 id 확인

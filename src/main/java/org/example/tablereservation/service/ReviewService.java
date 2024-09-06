@@ -48,7 +48,7 @@ public class ReviewService {
         }
 
         ReviewEntity reviewEntity = optionalReviewEntity.get();
-
+//      기존 리뷰는 사라지고 새 리뷰만 남음
         reviewEntity.setContent(newContent);
         reviewEntity.setRating(newRating);
 
