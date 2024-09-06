@@ -1,5 +1,8 @@
 ## ⏰매장 예약 시스템 구현하기 <br>
 
+![image](https://github.com/user-attachments/assets/14e700dc-cb74-47fc-bc08-5b89fed7e221)
+
+
 *security 설정을 테스트 때문에 잠시 모두 허용으로 해놓음
 
 ### API 명세서
